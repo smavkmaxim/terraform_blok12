@@ -6,11 +6,6 @@ terraform {
   }
 }
 
-provider "yandex" {
-  zone = var.custom_zone
-  service_account_key_file = "/opt/authorized_key.json"
-}
-
 resource "yandex_vpc_security_group" "sgroup_prod" {
   name        = "sg_kma_prod"
   description = "description for my security group"

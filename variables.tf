@@ -1,6 +1,6 @@
 variable "custom_folder_id" {
   type    = string
-  default = "b1guscee28q8rh9ipivq"
+  default = "b1gpb7u585js8p4u75re"
 }
 
 variable "custom_zone" {

@@ -1,4 +1,3 @@
-# main.tf
 terraform {
   required_providers {
     yandex = {
@@ -6,13 +5,6 @@ terraform {
     }
   }
 }
-
-provider "yandex" {
-  zone = var.custom_zone
-  service_account_key_file = "/opt/authorized_key.json"
-}
-
-
 
 resource "yandex_vpc_network" "network-1" {
   name = "network1"
